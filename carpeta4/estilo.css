@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    max-width: 1600px;
+    width: 90%;
+    margin: auto;
+}
+.wrap > h1{
+    text-align: center;
+    width: auto;
+    margin: 20px 0;
+}
+
+.wrap .imagen{
+    width: 30%; /* ancho */
+    margin-left: 35%; /*distancia entre imaguenes*/
+    margin-bottom: 25px; /* añadio un pequeño margen */
+    text-align: center;
+}
+
+.wrap .imagen img{ /*se llama a la imaguen para que tenga un ancho completo*/
+    width: 100%; 
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Carrito(6)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilaso.css">
+</head>
+<body>
+    <div class="wrap">
+    <h1>Realizar Compra</h1>
+    <br>
+    <main>
+        <form action="procesar-pago">
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Cliente </label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Ingresa nombre del cliente"required>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Corre Electrónico</label>
+                <input type="email" class="form-control" id="inputAddress2" placeholder="Ingresa correo del cliente"required>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">DNI / RUC</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Ingresa DNI o RUC del cliente"required>
+            <br>
+            <label>Tipo de Orden:   </label>
+            <input id="delivery" type="radio" name="orden"value="delivery"required>
+            <label for="delivery">Delivery</label>
+            <input id="recojo" type="radio" name="orden"value="recojo"required>
+            <label for="recojo">Recojo en Tienda </label>
+            <br>
+            <br>
+            <table class="table table-success table-striped" id="lista-compra" >
+                <thead>
+                    <tr>
+                        <th >Nombre</th>
+                        <th >Precio</th>
+                        <th>Cantidad</th>
+                        <th >Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ceviche de Pescado</td>
+                        <td>30</td>
+                        <td>2</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>Jalea Mixta</td>
+                        <td>50</td>
+                        <td>1</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Arroz con Mariscos - Ceviche</td>
+                        <td>55</td>
+                        <td>2</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>Helado de Fresa</td>
+                        <td>15</td>
+                        <td>5</td>
+                        <td>75</td>
+                    </tr>
+                    <tr>
+                        <td>TOTAL A PAGAR </td>
+                        <td></td>
+                        <td></td>
+                        <td>S/. <span class="">295</span></td>
+                    </tr>
+                </tbody>
+
+</table>
+            <label>Formato de pago:   </label>
+            <input id="cash" type="radio" name="formato"value="cash"required>
+            <label for="cash">Efectivo</label>
+            <input id="card" type="radio" name="formato"value="card"required>
+            <label for="card">Tarjeta </label>
+            <br>
+            <br>
+            <input type="submit" value="Realizar Compra">
+        </form>
+    </main> 
+    </div>
+</body>
+</html>

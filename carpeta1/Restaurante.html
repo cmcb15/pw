@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="estilo.css">
+    <title>R E S T A U R A N T E (4)</title>
+<script src ="jquery-3.6.3.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+    <ul class="nav nav-tabs justify-content-end" id="cabecera" style="border: hidden;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/pantalla3.html" id="activo" style="border: hidden;">Pagina Principal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/sorpresa.html" id="des1" style="border: hidden;">Reseñas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#" id="des2" style="border: hidden;">Carrito</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#" id="des3" style="border: hidden;">Ver pedido</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/pantalla1.html" id="des4" style="border: hidden;">Cerrar Sesión</a>
+        </li>
+    </ul>
+    <div class ="wrap">
+        <h1>SELECCIONA LA CATEGORIA</h1>
+        <div class ="wraper-tienda">
+            <div class="lista-categoria">
+                <a href="#" class="categoria" category = "todo">TODO</a>
+                <a href="#" class="categoria" category = "platos_personales">PLATOS PERSONALES</a>
+                <a href="#" class="categoria" category = "duos">DUOS</a>
+                <a href="#" class="categoria" category = "trios">TRIOS</a>
+                <a href="#" class="categoria" category = "postres">POSTRES</a>
+                <a href="#" class="categoria" category = "helados">HELADOS</a>
+            </div>
+            <section class = "listaproducto">  
+                <div class="itemproducto" category ="platos_personales">
+                    <img src="https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_orig.jpg " >
+                    <a href="#">Ceviche de Pescado</a>
+                </div>      
+                <div class="itemproducto" category ="platos_personales">
+                    <img src="https://picanterias.com/wp-content/uploads/2020/04/arroz-con-marisco.jpg" >
+                    <a href="#">Arroz con Mariscos</a>
+                </div>   
+                <div class="itemproducto" category ="platos_personales">
+                    <img src="https://comidasperuanas.net/wp-content/uploads/2019/01/Jalea-de-pescado.jpg">                    
+                    <a href="#">Jalea Mixta</a>
+                </div>
+                <div class="itemproducto" category ="platos_personales">
+                    <img src="https://www.comedera.com/wp-content/uploads/2022/02/arroz-chaufa-de-mariscos.jpg">
+                    <a href="#">Chaufa de Mariscos</a>
+                </div>   
+                <div class="itemproducto" category ="duos">
+                    <img src="https://img.freepik.com/fotos-premium/comida-peruana-ceviche-chicharron-pescado-plato-tradicional-peruano-duo-marino_136753-1221.jpg" >
+                    <a href="#">Jalea de pescado - Ceviche</a>
+                </div>   
+                <div class="itemproducto" category ="duos">
+                    <img src="https://cuponassets.cuponatic-latam.com/backendPe/uploads/imagenes_descuentos/99120/8b041aab289dc32ddd6d52d791c589b5f75ec4c4.S.jpg" >
+                    <a href="#">Arroz con Mariscos - Ceviche</a>
+                </div> 
+                <div class="itemproducto" category ="trios">
+                    <img src="https://www.laferiataypa.com/demo/wp-content/uploads/2020/06/triomarino.jpg" >
+                    <a href="#">jalea de pescado - ceviche - arroz con mariscos</a>
+                </div>   
+                <div class="itemproducto" category ="trios">
+                    <img src="https://www.laferiataypa.com/huacho/wp-content/uploads/2020/07/plato2-3.jpg" >
+                    <a href="#">jalea de pescado - ceviche - arroz chaufa</a>
+                </div> 
+                <div class="itemproducto" category ="postres">
+                    <img src="https://iperu.pe/wp-content/uploads/2019/12/crema-volteada_800x534.jpg" >
+                    <a href="#">Crema Volteada</a>
+                </div> 
+                <div class="itemproducto" category ="postres">
+                    <img src="https://buenazo.cronosmedia.glr.pe/original/2021/12/10/61b42ee9a7c5372e257c4dee.jpg" >
+                    <a href="#">Cheesecake de Oreo</a>
+                </div>   
+                <div class="itemproducto" category ="helados">
+                    <img src="https://dulcesperu.com/wp-content/uploads/2019/12/helado-de-chocolate-cacao-receta.jpg" >
+                    <a href="#">Helado de Chocolate</a>
+                </div>   
+                <div class="itemproducto" category ="helados">
+                    <img src="http://3.bp.blogspot.com/-rj4XfzCbDxo/UZ6HkqhrEPI/AAAAAAAAFWs/HqPa0ho1N20/s1600/heladofresa2.jpg" >
+                    <a href="#">Helado de Fresa</a>
+                </div>   
+            </section>
+        </div>
+    </div>
+</body>
+</html>

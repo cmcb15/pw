@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Estado de Pedido (8)</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="wrap">
+        <h1>Estado de Pedido</h1>
+        <form action="Estado-pedido">
+            <div class="imagen">
+            <img src="https://img.freepik.com/vector-premium/servicio-entrega-linea-pedido-telefonos-inteligentes-mapa-navegacion-ilustracion-coronavirus_24640-63707.jpg?w=2000">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Para ver su estado de pedido debe introducir su número de telefono</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Ingresa su número" required>
+            </div>
+            <label>Seleccione el medio por el cual desea recibir el codigo de verificación: </label>
+            <input id="delivery" type="radio" name="orden"value="delivery"required>
+            <label for="delivery">Llamada</label>
+            <input id="recojo" type="radio" name="orden"value="recojo"required>
+            <label for="recojo">Mensaje</label>            <br>
+            <br>
+            <input type="submit" value="Solicitar sms">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    max-width: 1600px;
+    width: 90%;
+    margin: auto;
+}
+.wrap > h1{
+    text-align: center;
+    width: auto;
+    margin: 20px 0;
+}
+.wraper-tienda{
+    display: flex;
+}
+.lista-categoria{
+    display: flex;
+    flex-direction: column; /*ordena en columnas*/
+    width: 18%; /*ancho*/
+}
+
+.lista-categoria .categoria{
+    display: block; /*para modificarlo*/
+    padding: 15px;
+    width: 82%;
+    margin-bottom: 20px;
+    padding: 15px 0;
+}
+
+.lista-categoria .ct_activar-item{ /*se creo nueva clase y se tuvo que añadir al <a <todo*/
+    background-color: aqua;
+}
+/* PRODUCTOS */
+.listaproducto{
+    width: 82%; /*ancho restante*/
+    display: flex; /*ponerse uno al lado del otro*/
+    flex-wrap: wrap; /*si pasan el limite se van abajo*/
+}
+.listaproducto .itemproducto{
+    width: 22%; /* ancho */
+    margin-left: 3%; /*distancia entre imaguenes*/
+    margin-bottom: 25px; /* añadio un pequeño margen */
+}
+
+.listaproducto .itemproducto img{ /*se llama a la imaguen para que tenga un ancho completo*/
+    width: 100%; 
+}
+
+.listaproducto .itemproducto a{
+    display: block; /*para modificarlo*/
+    width: 100%;
+    padding: 8px 0; /*arriba y abajo*/
+    text-align: center;
+
+}
+.listaproducto .itemproducto h4{
+    display: block; /*para modificarlo*/
+    width: 100%;
+    padding: 12px 0; /*arriba y abajo*/
+    text-align: center;
+    margin-bottom: 5px;
+}
+.listaproducto .itemproducto h5{
+    display: block; /*para modificarlo*/
+    width: 100%;
+    padding: 12px 0; /*arriba y abajo*/
+    text-align: center;
+    margin-bottom: 5px;
+
+}
